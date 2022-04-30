@@ -1,0 +1,88 @@
+body{
+    background-image: radial-gradient(farthest-corner at 40px 40px,
+    #f35 0%, #43e 100%);
+    display: flex;
+    align-items: center;
+}
+
+button{
+    height: 4rem;
+    width: 7rem;
+    background-color: rgb(82, 182, 0);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: block;
+    margin: 1rem;
+    margin-left: 8rem;
+    border: solid 0.5px rgb(54, 54, 54);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#padre{
+    width: 24rem;
+    height: 30rem;
+    background-image: linear-gradient(to bottom right, rgb(218, 218, 218), rgb(255, 255, 255),rgb(156, 156, 156));
+    margin: 5rem 15rem 5rem 13rem;
+    border-radius: 26px;
+    
+}
+
+#numeroUno{
+    margin: 0;
+    height: 4rem;
+    padding: 0.5rem;
+    margin-left: 0.9rem;
+}
+#imgUno{
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    position: relative;
+    top:-50px;
+    right: -30px;
+}
+
+#numeroDos{
+    height: 4rem;
+    padding: 0.5rem; 
+    display: flex;
+    justify-content: start; 
+    transform: rotate(180deg);
+    margin-right: 0.9rem;
+}
+#imgDos{
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    position: relative;
+    right:10px;
+    top: 5px;
+}
+
+h2{
+    margin: 0;
+    font-size: 3rem;
+}
+
+#imgMedio{
+    width: 4rem;
+    height: 4rem;
+}
+
+h1{
+    font-size: 10rem;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+}
+#numeroCentral{
+    width: 17rem;
+    height: 20rem;
+    border: solid 0.1px rgb(148, 148, 148);
+    border-radius: 26px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
