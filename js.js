@@ -2,26 +2,17 @@
 //clases
 
 //botones
+let numeroCambio = document.getElementsByClassName("numerosCambio")
 let random = document.getElementById("botonRandom")
 let pinta = document.getElementById("botonPinta")
 let numero = document.getElementById("botonNumero")
 
 //img
-let imagenesCambioUno = document.getElementById("imgUno")
-let imagenesCambioDos = document.getElementById("imgDos")
-// imagenesCambioUno.innerHTML =`
-// <img id="imgConejo" src="/img/conejo.png" alt="conejo"/>
-// <img id="imgGato" src="/img/gato.png" alt="gato"/>
-// <img id="imgOso" src="/img/oso.png" alt="oso"/>
-// <img id="imgPerro" src="/img/perro.png" alt="perro"/>
-// `
-let imgConejo = document.getElementById("imgConejo")
-let imgGato = document.getElementById("imgGato")
-let imgOso = document.getElementById("imgOso")
-let imgPerro = document.getElementById("imgPerro")
+let imgUno = document.getElementById("imgUno")
+let imgDos = document.getElementById("imgDos")
 
 //arreglo imagenes
-let imgArreglo = [imgConejo,imgGato,imgOso,imgPerro] 
+let imgArreglo = ["conejo","gato","oso","perro"] 
 
 //cambio numeral de la carta
 let arrNumeros = [1,2,3,4,5,6,7,8,9,10,"J","Q","K","As"]
@@ -29,12 +20,23 @@ let arrNumeros = [1,2,3,4,5,6,7,8,9,10,"J","Q","K","As"]
 //----------------------------------------------------------------------------{funcionalidades}
 
 //cambio de pinta
-function cambiarImagenJS(){
-    let numerosCambio = document.getElementsByClassName("numerosCambio").
-  }
+pinta.addEventListener("click", function(){
+  let aleatorio = Math.floor(Math.random() *(3 + 1));
+  imgUno.src = `http://localhost:5500/img/${imgArreglo[aleatorio]}.png`
+  imgDos.src = `http://localhost:5500/img/${imgArreglo[aleatorio]}.png`
+})
 
 //---------------------------------------------------------------
+
 //cambio de numero
+numero.addEventListener("click",function(){
+  let aleatorio = Math.floor(Math.random()*(13 + 1));
+  numeroCambio.forEach(element => {
+    console.log(element)
+  });
+  console.log(numeroCambio)
+  
+})
 
 //---------------------------------------------------------------
 //carta aleatoria
